@@ -53,7 +53,7 @@ ListItem {
                 id: screenShotButton
                 anchors.fill: parent
                 onClicked: {
-                    print("opening at:", screenShotButton.mapToItem(root, 0, 0).x)
+                    
                     var zoomIn = Qt.createComponent(Qt.resolvedUrl("../Components/ScreenshotImage.qml"));
 
                     var props = {
@@ -65,7 +65,7 @@ ListItem {
                     }
 
                     zoomIn.createObject(root, props);
-                    //                            zoomIn.createObject(root, {x: 100, y: 100});
+                                                
                 }
             }
         }
